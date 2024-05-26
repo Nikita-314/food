@@ -8,12 +8,20 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('login'),),
-      body: Center(
-        child: Text('Otus.Food', style: AppFonts.s30w400,),
-      ),
-    );
+        appBar: AppBar(
+          title: Text('login'),
+        ),
+        body: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 145.w, vertical: 248.h),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'Otus.Food',
+                style: AppFonts.s30w400,
+              )
+            ],
+          ),
+        ));
   }
-
-  
 }
