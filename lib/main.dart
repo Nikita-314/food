@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:food_app/core/colors/app_colors.dart';
 import 'package:food_app/presentation/feautures/authorization/screens/login_screen.dart';
+import 'package:food_app/presentation/feautures/authorization/screens/reg_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
           ),
           scaffoldBackgroundColor: AppColors.green,
         ),
-        home: LoginScreen(),
+        home: RegScreen(),
       ),
       
     );
