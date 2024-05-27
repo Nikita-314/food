@@ -16,4 +16,9 @@ abstract class AppFonts {
     fontSize: 16.sp,
     fontWeight: FontWeight.w400,
   );
+
+  static TextStyle s14w400 = TextStyle(
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w400,
+  );
 }

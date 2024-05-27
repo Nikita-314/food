@@ -43,25 +43,3 @@ class LineForm extends StatelessWidget {
     );
   }
 }
-
-// class LineFormPass implements LineForm{
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return SizedBox(
-//       height: 48.h,
-//       width: 232.w,
-//       child: TextField(
-//         keyboardType: TextInputType.visiblePassword,
-//         decoration: InputDecoration(
-//           prefixIcon: Icon(Icons.lock, color: AppColors.grey2),
-         
-        
-         
-        
-        
-//         ),
-//       ),
-//     );
-//   } 
-// }

@@ -30,3 +30,22 @@ class AppButton extends StatelessWidget {
     );
   }
 }
+
+
+class AppButtonReg extends StatelessWidget {
+  const AppButtonReg({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      alignment: Alignment.center,
+
+      child: TextButton(
+        onPressed: () {},
+        child: Text('Зарегистрироваться', style: AppFonts.s14w400.copyWith(color: AppColors.white)),
+      ),
+    );
+  }
+}

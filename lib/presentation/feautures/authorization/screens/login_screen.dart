@@ -41,10 +41,11 @@ class LoginScreen extends StatelessWidget {
                   SizedBox(height: 24.h),
                   const LineForm(icon: Icons.lock, title: 'Пароль'),
                   SizedBox(height: 24.h),
-               
                   const AppButton(
                     title: 'Войти',
                   ),
+                  SizedBox(height: 64.h),
+                  AppButtonReg(),
                 ],
               ),
             ),
@@ -54,3 +55,5 @@ class LoginScreen extends StatelessWidget {
     );
   }
 }
+
+
