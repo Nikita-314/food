@@ -4,6 +4,7 @@ import 'package:food_app/core/colors/app_colors.dart';
 import 'package:food_app/core/fonts/app_fonts.dart';
 import 'package:food_app/presentation/common_widgets/app_batton.dart';
 import 'package:food_app/presentation/common_widgets/app_line_form.dart';
+import 'package:food_app/presentation/common_widgets/app_navigation.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -45,15 +46,18 @@ class LoginScreen extends StatelessWidget {
                     title: 'Войти',
                   ),
                   SizedBox(height: 64.h),
-                  AppButtonReg(),
+                  Spacer(),
+                  AppButtonReg(
+                    title: 'Войти в приложение',
+                  ),
                 ],
               ),
             ),
+            Spacer(),
+            //AppNavigation(icon: Icons.local_pizza,),
           ],
         ),
       ),
     );
   }
 }
-
-

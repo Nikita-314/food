@@ -5,9 +5,7 @@ import 'package:food_app/core/fonts/app_fonts.dart';
 
 class AppButton extends StatelessWidget {
   final String title;
-  const AppButton({
-    super.key, required this.title
-  });
+  const AppButton({super.key, required this.title});
 
   @override
   Widget build(BuildContext context) {
@@ -31,20 +29,20 @@ class AppButton extends StatelessWidget {
   }
 }
 
-
 class AppButtonReg extends StatelessWidget {
+  final String title;
   const AppButtonReg({
-    super.key,
+    super.key, required this.title
   });
 
   @override
   Widget build(BuildContext context) {
     return Container(
       alignment: Alignment.center,
-
       child: TextButton(
         onPressed: () {},
-        child: Text('Зарегистрироваться', style: AppFonts.s14w400.copyWith(color: AppColors.white)),
+        child: Text(title,
+            style: AppFonts.s14w400.copyWith(color: AppColors.white)),
       ),
     );
   }
