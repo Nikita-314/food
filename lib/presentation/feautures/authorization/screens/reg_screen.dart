@@ -40,7 +40,7 @@ class RegScreen extends StatelessWidget {
           SizedBox(height: 64.h),
           AppButtonReg(title: 'Войти в приложение'),
           Spacer(),
-          AppNavigation(icon: Icons.local_pizza, title: 'рецепты'),
+          AppNavigation(),
           // AppNavigation(
           //   icon: Icons.local_pizza_sharp,
           //   title: 'рецепты',
