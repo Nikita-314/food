@@ -9,6 +9,14 @@ import 'package:food_app/presentation/common_widgets/app_navigation.dart';
 class RegScreen extends StatelessWidget {
   const RegScreen({super.key});
 
+  void _handleAction1() {
+    // Обработчик первой кнопки
+  }
+
+  void _handleAction2() {
+    // Обработчик второй кнопки
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,7 +48,28 @@ class RegScreen extends StatelessWidget {
           SizedBox(height: 64.h),
           AppButtonReg(title: 'Войти в приложение'),
           Spacer(),
-          AppNavigation(),
+          AppNavigation(
+            items: [
+              BottomNavigationBarItem(
+                icon: GestureDetector(
+                  onTap: () {
+                    _handleAction1;
+                  },
+                  child: const Icon(Icons.local_pizza),
+                ),
+                label: 'рецепты',
+              ),
+              BottomNavigationBarItem(
+                icon: GestureDetector(
+                  onTap: () {
+                    _handleAction2;
+                  },
+                  child: const Icon(Icons.person),
+                ),
+                label: 'вход',
+              ),
+            ],
+          ),
           // AppNavigation(
           //   icon: Icons.local_pizza_sharp,
           //   title: 'рецепты',
