@@ -52,18 +52,14 @@ class RegScreen extends StatelessWidget {
             items: [
               BottomNavigationBarItem(
                 icon: GestureDetector(
-                  onTap: () {
-                    _handleAction1;
-                  },
+                  onTap: _handleAction1,
                   child: const Icon(Icons.local_pizza),
                 ),
                 label: 'рецепты',
               ),
               BottomNavigationBarItem(
                 icon: GestureDetector(
-                  onTap: () {
-                    _handleAction2;
-                  },
+                  onTap: _handleAction2,
                   child: const Icon(Icons.person),
                 ),
                 label: 'вход',
